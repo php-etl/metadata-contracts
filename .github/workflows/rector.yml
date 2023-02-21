@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: rector
+name: Rector automatic refactoring
 jobs:
   rector:
     name: Rector
