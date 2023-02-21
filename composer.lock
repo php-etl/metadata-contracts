@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f46d09d19a9a08fb900ce171595e3b5",
+    "content-hash": "89b0f1d9c1909985b765ec390bd59dea",
     "packages": [],
     "packages-dev": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "3198be77e9f62f10840af01f3046f3152dc38b38"
+                "reference": "1cd5fc530a8b68702f3733ad64294b2a39564198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3198be77e9f62f10840af01f3046f3152dc38b38",
-                "reference": "3198be77e9f62f10840af01f3046f3152dc38b38",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1cd5fc530a8b68702f3733ad64294b2a39564198",
+                "reference": "1cd5fc530a8b68702f3733ad64294b2a39564198",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.10.x"
+                "source": "https://github.com/phpstan/phpstan/tree/1.10.1"
             },
             "funding": [
                 {
@@ -65,7 +65,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-21T08:17:42+00:00"
+            "time": "2023-02-21T21:57:23+00:00"
         },
         {
             "name": "rector/rector",
@@ -73,12 +73,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "88aaa17af1836cb870ca18be2d8f24ae0a92d420"
+                "reference": "908a3c39d378608510ea3d46a41b966112eb39b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/88aaa17af1836cb870ca18be2d8f24ae0a92d420",
-                "reference": "88aaa17af1836cb870ca18be2d8f24ae0a92d420",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/908a3c39d378608510ea3d46a41b966112eb39b5",
+                "reference": "908a3c39d378608510ea3d46a41b966112eb39b5",
                 "shasum": ""
             },
             "require": {
@@ -121,14 +121,12 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-20T16:55:22+00:00"
+            "time": "2023-02-21T17:09:39+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "rector/rector": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
