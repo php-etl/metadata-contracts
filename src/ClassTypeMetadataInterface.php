@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Kiboko\Contract\Metadata;
 
@@ -15,7 +17,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     public function getProperty(string $name): PropertyMetadataInterface;
 
-    public function addProperties(PropertyMetadataInterface ...$properties): ClassTypeMetadataInterface;
+    public function addProperties(PropertyMetadataInterface ...$properties): self;
 
     /**
      * @return iterable<MethodMetadataInterface>|MethodMetadataInterface[]
@@ -24,7 +26,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     public function getMethod(string $name): MethodMetadataInterface;
 
-    public function addMethods(MethodMetadataInterface ...$methods): ClassTypeMetadataInterface;
+    public function addMethods(MethodMetadataInterface ...$methods): self;
 
     /**
      * @return iterable<FieldMetadataInterface>|FieldMetadataInterface[]
@@ -33,7 +35,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     public function getField(string $name): FieldMetadataInterface;
 
-    public function addFields(FieldMetadataInterface ...$fields): ClassTypeMetadataInterface;
+    public function addFields(FieldMetadataInterface ...$fields): self;
 
     /**
      * @return iterable<RelationMetadataInterface>|RelationMetadataInterface[]
@@ -42,5 +44,5 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     public function getRelation(string $name): RelationMetadataInterface;
 
-    public function addRelations(RelationMetadataInterface ...$relations): ClassTypeMetadataInterface;
+    public function addRelations(RelationMetadataInterface ...$relations): self;
 }
