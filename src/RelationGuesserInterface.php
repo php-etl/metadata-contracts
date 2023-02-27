@@ -6,13 +6,13 @@ namespace Kiboko\Contract\Metadata;
 
 use PhpSpec\Wrapper\Subject;
 
-/**
- * @template Subject of object
- */
 interface RelationGuesserInterface
 {
     /**
+     * @template Subject of object
+     *
      * @param ClassTypeMetadataInterface<Subject> $class
+     *
      * @return iterable<RelationMetadataInterface<mixed>>
      */
     public function __invoke(ClassTypeMetadataInterface $class): iterable;
