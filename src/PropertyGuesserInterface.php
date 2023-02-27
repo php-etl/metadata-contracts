@@ -7,7 +7,12 @@ namespace Kiboko\Contract\Metadata;
 interface PropertyGuesserInterface
 {
     /**
-     * @return PropertyMetadataInterface[]|\Generator
+     * @template Subject of object
+     *
+     * @param \ReflectionClass<Subject> $classOrObject
+     * @param ClassTypeMetadataInterface<Subject> $class
+     *
+     * @return list<PropertyMetadataInterface<mixed>>
      */
     public function __invoke(\ReflectionClass $classOrObject, ClassTypeMetadataInterface $class): iterable;
 }

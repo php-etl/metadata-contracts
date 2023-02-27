@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Kiboko\Contract\Metadata;
 
-use Kiboko\Component\Metadata\Type;
-
 /**
- * @property string $name
- * @property Type[] $types
+ * @template PropertyType
+ * @extends TypedInterface<PropertyType>
  */
 interface FieldMetadataInterface extends NamedInterface, TypedInterface
 {

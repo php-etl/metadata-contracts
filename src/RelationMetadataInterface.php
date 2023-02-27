@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Kiboko\Contract\Metadata;
 
 /**
- * @property string $name
- * @property string $types
+ * @template Subject
+ * @extends TypedInterface<Subject>
  */
 interface RelationMetadataInterface extends NamedInterface, TypedInterface
 {
