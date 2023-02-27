@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Kiboko\Contract\Metadata;
 
 /**
- * @template Subject
+ * @template Subject of object
  * @template InnerType
  * @extends IterableTypeMetadataInterface<InnerType>
  * @extends TypedInterface<Subject>
