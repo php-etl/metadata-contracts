@@ -13,6 +13,10 @@ namespace Kiboko\Contract\Metadata;
 interface CollectionTypeMetadataInterface extends IterableTypeMetadataInterface, TypedInterface
 {
     /**
+     * @return ClassMetadataInterface<Subject>
+     */
+    public function getType(): ClassMetadataInterface;
+    /**
      * @return TypeMetadataInterface<InnerType>
      */
     public function getInner(): TypeMetadataInterface;
