@@ -13,7 +13,7 @@ interface RelationGuesserInterface
      *
      * @param ClassTypeMetadataInterface<Subject> $class
      *
-     * @return iterable<RelationMetadataInterface<mixed>>
+     * @return iterable<RelationMetadataInterface<Subject>>
      */
     public function __invoke(ClassTypeMetadataInterface $class): iterable;
 }

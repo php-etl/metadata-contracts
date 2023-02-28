@@ -11,7 +11,7 @@ interface FieldGuesserInterface
      *
      * @param ClassTypeMetadataInterface<Subject> $class
      *
-     * @return list<FieldMetadataInterface<mixed>>
+     * @return list<FieldMetadataInterface<Subject>>
      */
     public function __invoke(ClassTypeMetadataInterface $class): iterable;
 }
