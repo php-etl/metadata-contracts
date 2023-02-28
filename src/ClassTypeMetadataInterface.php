@@ -11,16 +11,6 @@ namespace Kiboko\Contract\Metadata;
 interface ClassTypeMetadataInterface extends ClassMetadataInterface
 {
     /**
-     * @return class-string<Subject>|null
-     */
-    public function getNamespace(): ?string;
-
-    /**
-     * @return class-string<Subject>|null
-     */
-    public function getName(): ?string;
-
-    /**
      * @return iterable<PropertyMetadataInterface<Subject>>
      */
     public function getProperties(): iterable;

@@ -9,4 +9,13 @@ namespace Kiboko\Contract\Metadata;
  */
 interface ClassMetadataInterface extends CompositeTypeMetadataInterface
 {
+    /**
+     * @return class-string<Subject>|null
+     */
+    public function getNamespace(): ?string;
+
+    /**
+     * @return class-string<Subject>|null
+     */
+    public function getName(): ?string;
 }
