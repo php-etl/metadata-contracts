@@ -7,6 +7,7 @@ namespace Kiboko\Contract\Metadata;
 /**
  * @template Subject of object
  * @template InnerType
+ *
  * @extends IterableTypeMetadataInterface<InnerType>
  * @extends TypedInterface<Subject>
  */
@@ -16,6 +17,7 @@ interface CollectionTypeMetadataInterface extends IterableTypeMetadataInterface,
      * @return ClassMetadataInterface<Subject>
      */
     public function getType(): ClassMetadataInterface;
+
     /**
      * @return TypeMetadataInterface<InnerType>
      */

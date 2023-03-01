@@ -6,6 +6,7 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template Subject of object
+ *
  * @extends CompositeTypeMetadataInterface<Subject>
  */
 interface ClassMetadataInterface extends CompositeTypeMetadataInterface

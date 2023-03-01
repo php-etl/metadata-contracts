@@ -9,7 +9,7 @@ interface MethodGuesserInterface
     /**
      * @template Subject of object
      *
-     * @param \ReflectionClass<Subject> $classOrObject
+     * @param \ReflectionClass<Subject>           $classOrObject
      * @param ClassTypeMetadataInterface<Subject> $class
      *
      * @return iterable<TypeMetadataInterface<mixed>>

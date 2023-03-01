@@ -6,6 +6,7 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template InnerType
+ *
  * @extends IterableTypeMetadataInterface<InnerType>
  */
 interface ListTypeMetadataInterface extends IterableTypeMetadataInterface
