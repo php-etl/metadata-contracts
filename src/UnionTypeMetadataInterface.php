@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Kiboko\Contract\Metadata;
 
-use Countable;
-use Traversable;
-
 /**
- * @extends TypeMetadataInterface<mixed>
- * @extends Traversable<TypeMetadataInterface<mixed>>
+ * @extends \Traversable<TypeMetadataInterface>
  */
-interface UnionTypeMetadataInterface extends TypeMetadataInterface, Countable, Traversable
+interface UnionTypeMetadataInterface extends TypeMetadataInterface, \Countable, \Traversable
 {
 }

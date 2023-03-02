@@ -4,13 +4,8 @@ declare(strict_types=1);
 
 namespace Kiboko\Contract\Metadata;
 
-use Traversable;
-
 /**
- * @template Subject of array
- *
- * @extends Traversable<int, NamedInterface&TypedInterface>
- * @extends CompositeTypeMetadataInterface<array>
+ * @extends \Traversable<ArrayEntryMetadataInterface>
  */
 interface ArrayTypeMetadataInterface extends \Traversable, CompositeTypeMetadataInterface
 {

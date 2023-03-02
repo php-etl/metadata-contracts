@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace Kiboko\Contract\Metadata;
 
 /**
- * @template ReturnType
+ * @template Subject of object
  */
 interface MethodMetadataInterface extends NamedInterface
 {
     public function getArguments(): ArgumentListMetadataInterface;
 
-    /**
-     * @return TypeMetadataInterface<ReturnType>
-     */
     public function getReturnType(): TypeMetadataInterface;
 }

@@ -10,10 +10,8 @@ interface TypeGuesserInterface
 {
     /**
      * @template Subject of object
-     *
      * @param \ReflectionClass<Subject> $class
-     *
-     * @return TypeMetadataInterface<Subject>
+     * @return TypeMetadataInterface
      */
     public function __invoke(\ReflectionClass $class, \Reflector $reflector): TypeMetadataInterface;
 }

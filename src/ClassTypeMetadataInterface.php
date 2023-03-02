@@ -6,23 +6,12 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template Subject of object
- *
  * @extends ClassMetadataInterface<Subject>
  */
 interface ClassTypeMetadataInterface extends ClassMetadataInterface
 {
     /**
-     * @return class-string<Subject>|null
-     */
-    public function getNamespace(): ?string;
-
-    /**
-     * @return class-string<Subject>|null
-     */
-    public function getName(): ?string;
-
-    /**
-     * @return iterable<PropertyMetadataInterface<mixed>>
+     * @return iterable<PropertyMetadataInterface<Subject>>
      */
     public function getProperties(): iterable;
 
@@ -32,14 +21,13 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
     public function getProperty(string $name): PropertyMetadataInterface;
 
     /**
-     * @param PropertyMetadataInterface<mixed> ...$properties
-     *
+     * @param PropertyMetadataInterface<Subject> ...$properties
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addProperties(PropertyMetadataInterface ...$properties): self;
 
     /**
-     * @return iterable<MethodMetadataInterface<mixed>>
+     * @return iterable<MethodMetadataInterface<Subject>>
      */
     public function getMethods(): iterable;
 
@@ -49,14 +37,13 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
     public function getMethod(string $name): MethodMetadataInterface;
 
     /**
-     * @param MethodMetadataInterface<mixed> ...$methods
-     *
+     * @param MethodMetadataInterface<Subject> ...$methods
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addMethods(MethodMetadataInterface ...$methods): self;
 
     /**
-     * @return iterable<FieldMetadataInterface<mixed>>
+     * @return iterable<FieldMetadataInterface<Subject>>
      */
     public function getFields(): iterable;
 
@@ -66,14 +53,13 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
     public function getField(string $name): FieldMetadataInterface;
 
     /**
-     * @param FieldMetadataInterface<mixed> ...$fields
-     *
+     * @param FieldMetadataInterface<Subject> ...$fields
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addFields(FieldMetadataInterface ...$fields): self;
 
     /**
-     * @return iterable<RelationMetadataInterface<mixed>>
+     * @return iterable<RelationMetadataInterface<Subject>>
      */
     public function getRelations(): iterable;
 
@@ -83,8 +69,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
     public function getRelation(string $name): RelationMetadataInterface;
 
     /**
-     * @param RelationMetadataInterface<mixed> ...$relations
-     *
+     * @param RelationMetadataInterface<Subject> ...$relations
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addRelations(RelationMetadataInterface ...$relations): self;

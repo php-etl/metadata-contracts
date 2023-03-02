@@ -6,9 +6,16 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template Subject of object
- *
- * @extends CompositeTypeMetadataInterface<Subject>
  */
 interface ClassMetadataInterface extends CompositeTypeMetadataInterface
 {
+    /**
+     * @return class-string<Subject>|null
+     */
+    public function getNamespace(): ?string;
+
+    /**
+     * @return class-string<Subject>|null
+     */
+    public function getName(): ?string;
 }

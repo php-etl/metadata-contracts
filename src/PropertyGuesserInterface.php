@@ -12,7 +12,7 @@ interface PropertyGuesserInterface
      * @param \ReflectionClass<Subject>           $classOrObject
      * @param ClassTypeMetadataInterface<Subject> $class
      *
-     * @return list<PropertyMetadataInterface<mixed>>
+     * @return list<PropertyMetadataInterface<Subject>>
      */
     public function __invoke(\ReflectionClass $classOrObject, ClassTypeMetadataInterface $class): iterable;
 }

@@ -6,8 +6,6 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template Subject
- *
- * @extends TypedInterface<Subject>
  */
 interface RelationMetadataInterface extends NamedInterface, TypedInterface
 {
