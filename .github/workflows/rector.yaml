@@ -1,7 +1,7 @@
 # github action that checks code with Rector
 name: Rector
 
-on: [pull_request, push]
+on: pull_request
 
 jobs:
     rector:

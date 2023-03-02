@@ -10,7 +10,9 @@ interface TypeGuesserInterface
 {
     /**
      * @template Subject of object
+     *
      * @param \ReflectionClass<Subject> $class
+     *
      * @return iterable<TypeMetadataInterface>
      */
     public function __invoke(string $tagName, \ReflectionClass $class, \Reflector $reflector): iterable;
