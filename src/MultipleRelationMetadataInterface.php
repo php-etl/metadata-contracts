@@ -6,6 +6,7 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template Subject
+ *
  * @extends RelationMetadataInterface<Subject>
  */
 interface MultipleRelationMetadataInterface extends RelationMetadataInterface

@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "1cd5fc530a8b68702f3733ad64294b2a39564198"
+                "reference": "aed9319bda4e1bf862e2576baf28949877891853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1cd5fc530a8b68702f3733ad64294b2a39564198",
-                "reference": "1cd5fc530a8b68702f3733ad64294b2a39564198",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/aed9319bda4e1bf862e2576baf28949877891853",
+                "reference": "aed9319bda4e1bf862e2576baf28949877891853",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/1.10.1"
+                "source": "https://github.com/phpstan/phpstan/tree/1.10.x"
             },
             "funding": [
                 {
@@ -65,7 +65,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-21T21:57:23+00:00"
+            "time": "2023-03-02T09:48:34+00:00"
         },
         {
             "name": "rector/rector",
@@ -73,17 +73,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "908a3c39d378608510ea3d46a41b966112eb39b5"
+                "reference": "52181ff8c72098d23e2d52127a2c3ff942f96784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/908a3c39d378608510ea3d46a41b966112eb39b5",
-                "reference": "908a3c39d378608510ea3d46a41b966112eb39b5",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/52181ff8c72098d23e2d52127a2c3ff942f96784",
+                "reference": "52181ff8c72098d23e2d52127a2c3ff942f96784",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "phpstan/phpstan": "^1.9.14"
+                "phpstan/phpstan": "^1.10.1"
             },
             "conflict": {
                 "rector/rector-doctrine": "*",
@@ -111,6 +111,12 @@
                 "MIT"
             ],
             "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
                 "source": "https://github.com/rectorphp/rector/tree/main"
@@ -121,7 +127,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-21T17:09:39+00:00"
+            "time": "2023-03-02T01:50:45+00:00"
         }
     ],
     "aliases": [],

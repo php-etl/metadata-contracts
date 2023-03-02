@@ -6,6 +6,7 @@ namespace Kiboko\Contract\Metadata;
 
 /**
  * @template Subject of object
+ *
  * @extends ClassMetadataInterface<Subject>
  */
 interface ClassTypeMetadataInterface extends ClassMetadataInterface
@@ -22,6 +23,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     /**
      * @param PropertyMetadataInterface<Subject> ...$properties
+     *
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addProperties(PropertyMetadataInterface ...$properties): self;
@@ -38,6 +40,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     /**
      * @param MethodMetadataInterface<Subject> ...$methods
+     *
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addMethods(MethodMetadataInterface ...$methods): self;
@@ -54,6 +57,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     /**
      * @param FieldMetadataInterface<Subject> ...$fields
+     *
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addFields(FieldMetadataInterface ...$fields): self;
@@ -70,6 +74,7 @@ interface ClassTypeMetadataInterface extends ClassMetadataInterface
 
     /**
      * @param RelationMetadataInterface<Subject> ...$relations
+     *
      * @return ClassTypeMetadataInterface<Subject>
      */
     public function addRelations(RelationMetadataInterface ...$relations): self;
